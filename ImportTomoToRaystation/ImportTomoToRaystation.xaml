@@ -1,0 +1,16 @@
+﻿<Window 
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+       Title="ImportTomoToRaystation" Height="488.588" Width="620.31">
+    <Grid>
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="616" Margin="0,0,-0.5,0">
+            <MenuItem Header="File">
+                <MenuItem Name="MenuPath" Header="Path" Click="MenuPath_Click"/>
+                <MenuItem Name="MenuExit" Header="Exit"/>
+            </MenuItem>
+        </Menu>
+        <ListBox x:Name="listBoxPatients" HorizontalAlignment="Left" Height="336" Margin="3,69,0,0" VerticalAlignment="Top" Width="603"/>
+        <Button x:Name="LoadButton" Content="Load Patients" HorizontalAlignment="Left" Height="46" Margin="374,405,0,0" VerticalAlignment="Top" Width="113" Click="LoadButton_Click"/>
+        <Button x:Name="ImportButton" Content="Import" HorizontalAlignment="Left" Height="46" Margin="493,405,0,0" VerticalAlignment="Top" Width="113"/>
+    </Grid>
+</Window> 
